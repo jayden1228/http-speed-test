@@ -53,9 +53,10 @@ func FormatSpeed(bytes uint64, duration time.Duration) string {
 }
 
 func main() {
-	// downloadUrl := "https://corbit-dev-868303926763-us-east-1.s3.amazonaws.com/cms/prod/world/-LssKL9rSbi5lM4P08qh/topic/-M0T9huUkb5E7ypz0xBN/9762068c4c00cfbd82f28cc323649ace.json"
-	downloadUrl := "https://d2niex7nhy7zda.cloudfront.net/cms/prod/publish/117/world/-LssKL9rSbi5lM4P08qh/world_sum.zip"
-	count := 100
+	downloadUrl := "https://d2niex7nhy7zda.cloudfront.net/cms/test/world/-LssKL9rSbi5lM4P08qh/topic/-Lu_uMCDOEO7ybaY12Za/aef8ed31d36b62c25da3ba56b933f32c.mp4"
+	// downloadUrl := "https://corbit-dev-868303926763-us-east-1.s3.amazonaws.com/cms/test/world/-LssKL9rSbi5lM4P08qh/topic/-Lu_uMCDOEO7ybaY12Za/aef8ed31d36b62c25da3ba56b933f32c.mp4"
+
+	count := 30
 	for i := 0; i < count; i++ {
 		RunClient(downloadUrl)
 	}
